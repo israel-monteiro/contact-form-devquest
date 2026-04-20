@@ -1,0 +1,105 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+.contact {
+    width: 80rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+
+    padding: 1.2rem 5rem;
+
+    background: url(../images/bg-repeat.jpg) center center repeat;
+}
+
+.contact-info {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.contact-info__title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.contact-info__title span {
+    display: block;
+}
+
+.contact-info__text {
+    color: #ffffff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    width: 34rem;
+    padding: 2.2rem;
+    
+    background-color: white;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.form-field__input {
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    border: 1.5px solid #000000;
+    border-radius: 0.5rem;
+}
+
+.form-field__input::placeholder {
+    font-weight: 700;
+    color: #a8a8a8;
+}
+
+.form-field__message {
+    font-size: 1.2rem;
+    color: #f52e2e;
+    display: none;
+}
+
+.form-field textarea {
+    min-height: 10rem;
+    resize: none;
+}
+
+.form__button {
+    background-color: #3CCC87;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 1.2rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.form-field--error .form-field__input {
+    border-color: #f52e2e;
+}
+.form-field--error .form-field__message {
+    display: block;
+}
