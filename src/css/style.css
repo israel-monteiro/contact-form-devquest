@@ -97,6 +97,9 @@ body {
     cursor: pointer;
 }
 
+.form-field--filled .form-field__input {
+    border-color: #00C22B;
+}
 .form-field--error .form-field__input {
     border-color: #f52e2e;
 }

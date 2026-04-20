@@ -9,6 +9,7 @@ function verificar() {
 
         if (input.value.trim() === "") {
             item.classList.add("form-field--error");
+            item.classList.remove("form-field--filled");
             campoIncompleto = true;
         } else {
             item.classList.remove("form-field--error");
@@ -24,6 +25,9 @@ campoDoFormulario.forEach((item) => {
     input.addEventListener("input", () => {
         if (input.value.trim() !== "") {
             item.classList.remove("form-field--error");
+            item.classList.add("form-field--filled");
+        } else {
+            item.classList.remove("form-field--filled");
         }
     });
 });
